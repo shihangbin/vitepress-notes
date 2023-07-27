@@ -36,7 +36,8 @@ export default defineConfig({
 		socialLinks: [{ icon: 'github', link: 'https://github.com/shihangbin' }],
 
 		editLink: {
-			pattern: 'https://github.com/shihangbin/blog/edit/main/docs/:path',
+			pattern:
+				'https://github.com/shihangbin/vitepress-notes/edit/main/docs/:path',
 			text: '在Github上编辑页面',
 		},
 	},
