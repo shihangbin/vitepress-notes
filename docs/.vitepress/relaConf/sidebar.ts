@@ -28,6 +28,9 @@ export const sidebar: DefaultTheme.Sidebar = {
 			items: [{ text: 'Git版本管理器', link: '/article/Git/Git常用指令' }],
 		},
 		{
+			items: [{ text: 'npm包管理工具', link: '/article/npm/npm常用指令' }],
+		},
+		{
 			text: '前端常用英语',
 			collapsed: true,
 			items: [
