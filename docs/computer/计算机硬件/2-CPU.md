@@ -1,5 +1,11 @@
 # CUP
 
+[超能网CPU天梯图](https://topic.expreview.com/CPU/)
+
+[快科技桌面CPU天梯图](https://www.mydrivers.com/zhuanti/tianti/cpu/)
+
+[秋刀鱼半藏cpu天梯图](https://tieba.baidu.com/p/5005825360)
+
 ## 核心和线程
 
 物理核心数: 等于干活的人数, 越多越快.
