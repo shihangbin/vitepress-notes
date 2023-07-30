@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { nav, sidebar } from './relaConf'
+import { generateSidebar } from 'vitepress-sidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -27,7 +28,38 @@ export default defineConfig({
 		// https://vitepress.dev/reference/default-theme-config
 		nav: nav,
 
-		sidebar: sidebar,
+		// sidebar: sidebar,
+		sidebar: generateSidebar([
+			{
+				documentRootPath: '/docs',
+				collapseDepth: 2,
+				rootGroupText: '前端笔记',
+				resolvePath: '/notes/',
+				scanStartPath: 'notes/',
+				sortByFileName: ['vue', 'Nodejs'],
+			},
+			{
+				documentRootPath: '/docs',
+				collapseDepth: 2,
+				rootGroupText: '文章杂类',
+				resolvePath: '/article/',
+				scanStartPath: 'article/',
+			},
+			{
+				documentRootPath: '/docs',
+				collapseDepth: 1,
+				rootGroupText: '项目文档',
+				resolvePath: '/document/',
+				scanStartPath: 'document/',
+			},
+			{
+				documentRootPath: '/docs',
+				collapseDepth: 1,
+				rootGroupText: '计算机基础',
+				resolvePath: '/computer/',
+				scanStartPath: 'computer/',
+			},
+		]),
 
 		search: {
 			provider: 'local',
