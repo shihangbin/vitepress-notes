@@ -54,4 +54,13 @@ export const sidebar: DefaultTheme.Sidebar = {
 			],
 		},
 	],
+	'/document/': [
+		{
+			text: '移动端项目',
+			items: [
+				{ text: '冬三九旅途', link: '/document/移动端项目/冬三九旅途' },
+				{ text: '接口文档', link: '/document/移动端项目/接口文档' },
+			],
+		},
+	],
 }
