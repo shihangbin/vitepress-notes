@@ -29,14 +29,22 @@ hero:
       link: /notes/index
 # 按钮下方的描述
 features:
-  - icon: 🤹
-    title: Web前端
-    details: 为生活奔波的切图仔.
-    # link: /column/views/guide
-  - icon: 📝
-    title: 专注前端
-    details: 简洁至上,清晰易懂,紧跟热点.
-  - icon: 🧩
-    title: 佛系青年
-    details: 是个平平无奇但是又很热爱学习的佛系青年。
+  - title: vue.js
+    icon: 
+      src: https://img.xbin.cn/images/2023/07/31-12-27-323870.svg
+    details: 轻松建构响应式界面，Vue.js是你的前端开发新选择。
+    link: https://cn.vuejs.org/
+    linkText: 玩转 Vue3
+  - title: React.js
+    icon: 
+      src: https://img.xbin.cn/images/2023/07/31-12-37-ee440d.svg
+    details: 用于构建 Web 和原生交互界面的库
+    link: https://react.docschina.org/
+    linkText: 玩转 React
+  - title: Node.js
+    icon: 
+      src: https://img.xbin.cn/images/2023/07/31-12-32-1ace4f.svg
+    details: Node.js® 是一个开源、跨平台的 JavaScript 运行时环境。
+    link: https://nodejs.org/zh-cn
+    linkText: 玩转 Node
 ---
