@@ -31,33 +31,33 @@ export default defineConfig({
 		// sidebar: sidebar,
 		sidebar: generateSidebar([
 			{
-				documentRootPath: '/docs',
+				documentRootPath: 'docs',
 				collapseDepth: 2,
 				rootGroupText: '前端笔记',
 				resolvePath: '/notes/',
-				scanStartPath: 'notes/',
-				sortByFileName: ['vue', 'Nodejs'],
+				scanStartPath: 'notes',
+				sortByFileName: ['Vue3', 'Nodejs'],
 			},
 			{
-				documentRootPath: '/docs',
+				documentRootPath: 'docs',
 				collapseDepth: 2,
 				rootGroupText: '文章杂类',
 				resolvePath: '/article/',
-				scanStartPath: 'article/',
+				scanStartPath: 'article',
 			},
 			{
-				documentRootPath: '/docs',
+				documentRootPath: 'docs',
 				collapseDepth: 1,
 				rootGroupText: '项目文档',
 				resolvePath: '/document/',
-				scanStartPath: 'document/',
+				scanStartPath: 'document',
 			},
 			{
-				documentRootPath: '/docs',
+				documentRootPath: 'docs',
 				collapseDepth: 1,
 				rootGroupText: '计算机基础',
 				resolvePath: '/computer/',
-				scanStartPath: 'computer/',
+				scanStartPath: 'computer',
 			},
 		]),
 
@@ -69,7 +69,7 @@ export default defineConfig({
 
 		editLink: {
 			pattern:
-				'https://github.com/shihangbin/vitepress-notes/edit/main/docs/:path',
+				'https://github.com/shihangbin/vitepress-notes/edit/maindocs/:path',
 			text: '在Github上编辑页面',
 		},
 	},
