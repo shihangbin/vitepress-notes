@@ -6,7 +6,7 @@ import { generateSidebar } from 'vitepress-sidebar'
 export default defineConfig({
 	// base:'/vitepress-notes/',
 	lang: 'zh-CN',
-	title: '冬三九 Study Notes',
+	title: '三九 Study Notes',
 	lastUpdated: true,
 	appearance: 'dark',
 	markdown: {
@@ -36,7 +36,7 @@ export default defineConfig({
 				rootGroupText: '前端笔记',
 				resolvePath: '/notes/',
 				scanStartPath: 'notes',
-				sortByFileName: ['Vue3', 'Nodejs'],
+				sortByFileName: ['Vue3', 'TypeScript', 'Nodejs'],
 			},
 			{
 				documentRootPath: 'docs',

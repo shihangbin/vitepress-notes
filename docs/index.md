@@ -11,7 +11,7 @@ home: true
 # lastUpdated: true
 
 hero:
-    name: 冬三九
+    name: 三九前端
     text: Study Web Notes.
     tagline: 不忘初心,方得始终!
     image:
