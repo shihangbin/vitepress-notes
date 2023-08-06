@@ -11,7 +11,7 @@ home: true
 # lastUpdated: true
 
 hero:
-    name: 三九前端
+    name: WEB 三九
     text: Study Web Notes.
     tagline: 不忘初心,方得始终!
     image:

@@ -88,3 +88,26 @@ function sum(num1: number, num2: number): number {
 }
 let res = sum(123, 321)
 ```
+
+## 函数类型案例
+
+```ts
+// 定义一个对象类型
+type lyricType = {
+	time: number
+	text: string
+}
+
+function parseLyric(lyric: string): lyricType {
+	const lyrics: lyricType[] = []
+	lyrics.push({ time: 123, text: '不忘初心,方得始终!' })
+	return lyrics
+}
+const lyricInfo = parseLyric('hahahahahaha')
+for (const item of lyricInfo) {
+	console.log(item.time, item.text)
+}
+console.log(lyricInfo)
+
+export {}
+```
