@@ -1,5 +1,7 @@
 # TS基础语法
 
+[TypeScript文档](https://ts.nodejs.cn/docs/)
+
 ## 简单体验
 
 ```sh

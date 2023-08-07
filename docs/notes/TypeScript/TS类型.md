@@ -230,5 +230,48 @@ delayExecFn((name, age) => {
 export {}
 ```
 
-## never类型
+## never 类型(了解)
 
+1. 开发中很少实际去定义 never 类型,在某些情况下会自动推导出 never 类型
+2. 开发框架(工具)的时候会使用到 never 3.封装一些工具的时候,可以使 never 类型
+
+```ts
+// 1.有些函数从不返回值：
+function fail(msg: string): never {
+	throw new Error(msg)
+}
+// 2.返回空数组
+function arrays() {
+	return []
+}
+// 3.never 类型表示从未观察到的值。
+function foo(msg: string | number) {
+	switch (typeof msg) {
+		case 'string':
+			console.log(msg.length)
+			break
+		case 'number':
+			console.log(msg)
+			break
+		default:
+			const check: never = msg
+	}
+}
+```
+
+## tuple(元组) 类型
+
+`[元组类型]`元组类型是另一种 Array 类型，它确切地知道它包含多少个元素，以及它在特定位置包含哪些类型。
+
+```ts
+function useState(initialState: number): [number, (newValue: number) => void] {
+	let stateValue = initialState
+	function setValue(newValue: number) {
+		stateValue = newValue
+	}
+	return [stateValue, setValue]
+}
+
+const [count, setCount] = useState(10)
+console.log(count, setCount)
+```
