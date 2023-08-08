@@ -45,6 +45,6 @@ features:
     icon: 
       src: https://img.xbin.cn/images/2023/07/31-12-32-1ace4f.svg
     details: Node.js® 是一个开源、跨平台的 JavaScript 运行时环境。
-    link: https://nodejs.org/zh-cn
+    link: https://nodejs.cn
     # linkText: 玩转 Node
 ---
