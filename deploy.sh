@@ -17,8 +17,8 @@ git init
 git add -A
 git commit -m "更新文章"
 
-git remote add origin2 git@github.com:shihangbin/vitepress-notes.git
-git push -f origin2 main:gh-pages 
+git remote add origin git@github.com:shihangbin/vitepress-notes.git
+git push -f origin main:gh-pages 
 
 cd -
 
