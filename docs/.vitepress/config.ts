@@ -32,7 +32,7 @@ export default defineConfig({
 		sidebar: generateSidebar([
 			{
 				documentRootPath: 'docs',
-				collapseDepth: 2,
+				collapseDepth: 1,
 				rootGroupText: '前端笔记',
 				resolvePath: '/notes/',
 				scanStartPath: 'notes',
@@ -40,7 +40,7 @@ export default defineConfig({
 			},
 			{
 				documentRootPath: 'docs',
-				collapseDepth: 2,
+				collapseDepth: 1,
 				rootGroupText: '文章杂类',
 				resolvePath: '/article/',
 				scanStartPath: 'article',
