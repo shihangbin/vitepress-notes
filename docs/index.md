@@ -15,7 +15,8 @@ hero:
   tagline: 不忘初心,方得始终!
   image:
     # 首页右边的图片
-    src: /images/logo.png
+    # src: /images/logo2.png
+    src: https://vitepress.dev/vitepress-logo-large.webp
     # 图片的描述
     alt: logo
   # 按钮相关
