@@ -14,7 +14,7 @@ export default defineConfig({
   },
 
   themeConfig: {
-    logo: '/images/logo4.png',
+    logo: '/images/logo.png',
     outlineTitle: '目录',
     sidebarMenuLabel: '菜单',
     lastUpdatedText: '最近更新时间',
