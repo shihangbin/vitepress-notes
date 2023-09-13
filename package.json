@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "vitepress": "^1.0.0-rc.12",
+    "vitepress": "^1.0.0-rc.13",
     "vitepress-sidebar": "^1.10.0"
   },
   "type": "module",
