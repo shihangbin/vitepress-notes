@@ -36,7 +36,12 @@ export default defineConfig({
         rootGroupText: '前端笔记',
         resolvePath: '/notes/',
         scanStartPath: 'notes',
-        manualSortFileNameByPriority: ['Vue3', 'TypeScript', 'Nodejs'],
+        manualSortFileNameByPriority: [
+          'Vue3',
+          'TypeScript',
+          'Nodejs',
+          'Nodejs重学',
+        ],
       },
       {
         documentRootPath: 'docs',

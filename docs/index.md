@@ -25,7 +25,7 @@ hero:
       link: /notes/index
     - theme: alt
       text: 个人成长
-      link: /notes/index
+      link: /about
 # 按钮下方的描述
 features:
   - title: vue.js
