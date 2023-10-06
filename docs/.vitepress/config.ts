@@ -37,10 +37,12 @@ export default defineConfig({
         resolvePath: '/notes/',
         scanStartPath: 'notes',
         manualSortFileNameByPriority: [
-          'Vue3',
+          'JavaScript',
           'TypeScript',
+          'Vue3',
           'Nodejs',
           'Nodejs重学',
+          'MySQL',
         ],
       },
       {
