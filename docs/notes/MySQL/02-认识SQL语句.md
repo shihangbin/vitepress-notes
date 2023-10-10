@@ -36,67 +36,6 @@
 
 > 接下来我们对他们进行一个个的学习和掌握。
 
-## 数据库的操作（一）
-
-> 查看当前数据库：
-
-```sh
-# 查看所有的数据
-SHOW DATABASES;
-# 使用某一个数据
-USE coderhub;
-# 查看当前正在使用的数据库
-SELECT DATABASE();
-```
-
-> 创建新的数据库：
-
-```sh
-# 创建数据库语句
-CREATE DATABASE bilibili;
-CREATE DATABASE IF NOT EXISTS bilibili;
-CREATE DATABASE IF NOT EXISTS bilibili
-DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
-```
-
-## 数据库的操作（二）
-
-> 删除数据库：
-
-```sh
-# 删除数据库
-DROP DATABASE bilibili;
-DROP DATABASE IF EXIT bilibili;
-```
-
-> 修改数据库：
-
-```sh
-# 修改数据库的字符集和排序规则
-ALTER DATABASE bilibili CHARACTER SET = utf8 COLLATE = utf8_unicode_ci;
-```
-
-## 数据表的操作（三）
-
-> 查看数据表
-
-```sh
-# 查看所有的数据表
-SHOW TABLES;
-# 查看某一个表结构
-DESC user;
-```
-
-> 创建数据表
-
-```sh
-CREATE TABLE IF NOT EXISTS `users`(
-  name VARCHAR(20),
-  age INT,
-  height DOUBLE
-);
-```
-
 ## SQL 的数据类型 – 数字类型
 
 > 我们知道不同的数据会划分为不同的数据类型，在数据库中也是一样：
@@ -159,3 +98,34 @@ CREATE TABLE IF NOT EXISTS `users`(
 > TEXT 用于存储大的字符串类型；
 
 ## 表约束
+
+> 主键：PRIMARY KEY
+
+- 一张表中，我们为了区分`每一条记录的唯一性`，必须`有一个字段是永远不会重复`，并且`不会为`空的，这个字段我们通常会将它设
+
+置为`主键`：
+
+- 主键是表中唯一的索引；
+- 并且必须是 `NOT NULL` 的，如果没有设置 NOT NULL，那么 MySQL 也会隐式的设置为 NOT NULL；
+- 主键也可以是多列索引，`PRIMARY KEY(key_part, ...)`，我们一般称之为`联合主键`；
+- 建议：开发中主键字段应该是和业务无关的，尽量不要使用业务字段来作为主键；
+
+> 唯一：UNIQUE
+
+- 某些`字段在开发中我们希望是唯一的`，`不会重复`的，比如手机号码、身份证号码等，这个字段我们可以使用 UNIQUE 来约束：
+- `使用 UNIQUE 约束的字段在表中必须是不同`的；
+- UNIQUE 索引允许 NULL 包含的列具有多个值 NULL；
+
+> 不能为空：NOT NULL
+
+- 某些字段我们要求用户必须插入值，不可以为空，这个时候我们可以使用 NOT NULL 来约束；
+
+> 默认值：DEFAULT
+
+- 某些字段我们希望在没有设置值时给予一个默认值，这个时候我们可以使用 DEFAULT 来完成；
+
+> 自动递增：AUTO_INCREMENT
+
+- 某些字段我们希望不设置值时可以进行递增，比如用户的 id，这个时候可以使用 AUTO_INCREMENT 来完成；
+
+> 外键约束也是最常用的一种约束手段，我们再讲到多表关系时，再进行讲解；
