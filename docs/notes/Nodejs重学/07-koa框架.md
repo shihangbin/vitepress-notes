@@ -79,13 +79,13 @@ npm install @koa/router
 
 ## 参数解析：params - query
 
-> 请求地址：http://localhost:8000/users/123
+> 请求地址：`http://localhost:8000/users/123`
 
 - 获取 params：
 
 ![](https://img.xbin.cn/images/2023/10/10-20-37-fe4b2e.png)
 
-> 请求地址：http://localhost:8000/login?username=why&password=123
+> 请求地址：`http://localhost:8000/login?username=why&password=123`
 
 - 获取 query：
 
@@ -93,7 +93,7 @@ npm install @koa/router
 
 ## 参数解析：json
 
-> 请求地址：http://localhost:8000/login
+> 请求地址：`http://localhost:8000/login`
 
 > body 是 json 格式
 
@@ -108,7 +108,7 @@ npm install @koa/router
 
 ## 参数解析：x-www-form-urlencoded
 
-> 请求地址：http://localhost:8000/login
+> 请求地址：`http://localhost:8000/login`
 
 - body 是 x-www-form-urlencoded 格式：
 
@@ -123,7 +123,7 @@ npm install @koa/router
 
 ## 参数解析：form-data
 
-> 请求地址：http://localhost:8000/login
+> 请求地址：`http://localhost:8000/login`
 
 - body 是 form-data 格式
 
