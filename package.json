@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "preview": "vitepress preview docs",
+    "github": "sh deploy.sh"
   },
   "dependencies": {
     "vitepress-plugin-image-viewer": "^1.1.2"
