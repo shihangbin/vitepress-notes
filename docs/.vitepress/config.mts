@@ -1,10 +1,8 @@
 import { defineConfig } from 'vitepress'
-import { nav, sidebar } from './relaConf'
 import { generateSidebar } from 'vitepress-sidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  // base: '/vitepress-notes/',
   lang: 'zh-CN',
   title: '三九 Study Notes',
   lastUpdated: true,
@@ -24,11 +22,30 @@ export default defineConfig({
       prev: '上一页',
       next: '下一页',
     },
-
     // https://vitepress.dev/reference/default-theme-config
-    nav: nav,
+    nav: [
+      {
+        text: '首页',
+        link: '/',
+      },
+      {
+        text: '前端笔记',
+        link: '/notes/index',
+      },
+      {
+        text: '文章杂类',
+        link: '/article/index',
+      },
+      {
+        text: '项目文档',
+        link: '/document/index',
+      },
+      {
+        text: '计算机基础',
+        link: '/computer/index',
+      },
+    ],
 
-    // sidebar: sidebar,
     sidebar: generateSidebar([
       {
         documentRootPath: 'docs',
